@@ -10,11 +10,11 @@ import com.example.demo.businesslogic.Authenticator;
 import com.example.demo.businesslogic.dtos.AuthDto;
 
 @Controller
-@ResponseBody
 
 @RequestMapping("/authenticate")
 public class Authentication {
 
+	@ResponseBody
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public AuthDto login(@RequestParam String user_id, @RequestParam String password) {
 		return new Authenticator().verifyLogin(user_id, password);
