@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ParaGlidingAppApplication {
+public class SampleSpringApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ParaGlidingAppApplication.class, args);
+		SpringApplication.run(SampleSpringApp.class, args);
 	}
 
 }
