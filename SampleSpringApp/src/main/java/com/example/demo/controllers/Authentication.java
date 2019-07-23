@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.example.demo.businesslogic.Authenticator;
+import com.example.demo.businesslogic.dtos.AuthDto;
+
 @Controller
 @ResponseBody
 
@@ -13,10 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class Authentication {
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String getDevName(@RequestParam String user_id, @RequestParam String password) {
-		System.out.println("UserName "+user_id);
-		System.out.println("PassWord "+password);
-		return password;
-
+	public AuthDto login(@RequestParam String user_id, @RequestParam String password) {
+		return new Authenticator().verifyLogin(user_id, password);
 	}
 }
