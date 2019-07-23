@@ -1,11 +1,14 @@
 package com.example.demo.persistentobject;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "authentication_table")
 public class AuthenticationObject {
+	
+	@Id
 	private String id;
 	private String user_id;
 	private String password;
