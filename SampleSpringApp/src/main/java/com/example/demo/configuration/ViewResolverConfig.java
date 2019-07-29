@@ -33,7 +33,7 @@ public class ViewResolverConfig implements WebMvcConfigurer {
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		// TODO Auto-generated method stub
-		registry.addResourceHandler("/resources/**").addResourceLocations("/").setCachePeriod(31556926);
+		registry.addResourceHandler("/resources/**").addResourceLocations("/WEB-INF/resources/").setCachePeriod(31556926);
 	}
 
 	@Override
