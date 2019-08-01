@@ -5,6 +5,5 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id="provider" class="simple.HelloWorldMessageProvider" />
-	<bean id="renderer" class="simple.StandardOutMessageRenderer"
-		p:messageProvider-ref="provider" />
+	<bean id="renderer" class="simple.StandardOutMessageRenderer" p:messageProvider-ref="provider" />
 </beans>

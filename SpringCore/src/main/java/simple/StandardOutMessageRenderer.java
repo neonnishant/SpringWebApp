@@ -12,7 +12,7 @@ public class StandardOutMessageRenderer implements MessageRenderer {
 	}
 
 	@Override
-	public void setMessageProvide(MessageProvider messageprovider) {
+	public void setMessageProvider(MessageProvider messageprovider) {
 		// TODO Auto-generated method stub
 		this.messageProvider = messageprovider;
 	}

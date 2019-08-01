@@ -3,7 +3,7 @@ package simple;
 public interface MessageRenderer {
 	void renderer();
 
-	void setMessageProvide(MessageProvider messageprovider);
+	void setMessageProvider(MessageProvider messageprovider);
 
 	MessageProvider getMessageProvider();
 }
